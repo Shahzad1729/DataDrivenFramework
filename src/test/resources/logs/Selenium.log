@@ -1,0 +1,7 @@
+17:41:28,436 DEBUG devpinoyLogger:60 - Config file loaded
+17:41:28,436 DEBUG devpinoyLogger:72 - Locators file loaded
+17:41:38,374 DEBUG devpinoyLogger:81 - Chrome driver is created
+17:41:40,036 DEBUG devpinoyLogger:104 - Navigated to: https://www.way2automation.com/angularjs-protractor/banking/
+17:41:44,232 DEBUG devpinoyLogger:12 - Inside Test Method
+17:42:01,688 DEBUG devpinoyLogger:143 - Test execution completed..
+17:42:02,431 DEBUG devpinoyLogger:145 - Report flushed..
