@@ -45,6 +45,7 @@ public class BaseClass {
     public static WebDriverWait wait;
     public static ExtentReports extentReports= ExtentManager.getInstance();
     public static ExtentTest extentTest;
+    public static String browser;
 
     @BeforeSuite
     public void setup()
@@ -73,6 +74,18 @@ public class BaseClass {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        // Jenkin Parameter
+        if(System.getenv("browser")!=null && !System.getenv().isEmpty())
+        {
+            browser=System.getenv("browser");
+        }
+        // Or set from config file
+        else{
+            browser=config.getProperty("browser");
+        }
+
+        config.setProperty("browser",browser);
 
         // Driver
         if(config.getProperty("browser").equals("chrome"))
